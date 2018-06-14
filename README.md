@@ -13,6 +13,8 @@ apply_mask.py: apply ribbon masks on images
 
 normalize_min_max.py: normalize image intensities to range [-1 1]
 
+nifti2binary: convert nifti (nii, nii.gz, mgz) to binary (hdf5, npz). Header not copied.
+
 ## Usage
 ```
 python apply_mask --file --input input.mgz --mask mask.mgz --output output.mgz --side [entire,left,right]
@@ -22,6 +24,11 @@ python apply_mask --folder --input input/ --mask mask/ --output output/ --side [
 ```
 python normalize_min_max --file --input input.mgz --output input.mgz
 python normalize_min_max --folder --input input/ --output input/
+```
+
+```
+python nifti2binary.py --format hdf5 --infolder /path/to/image/folder 
+                       --csv /path/to/csv/file --outFile /path/to/output/file 
 ```
 
 ## Credit
