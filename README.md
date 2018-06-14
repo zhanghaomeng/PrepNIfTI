@@ -5,12 +5,13 @@ mainly for deep learning projects.
 ## Requirements
 numpy, pandas, nibabel, h5py, argparse
 
-The program has been tested on Ubuntu 16.04 with Python 3.5.2 and Python 2.7.12
+The scripts has been tested on Ubuntu 16.04 with Python 3.5.2 and Python 2.7.12
 
 ## Function
 
 apply_mask.py: apply ribbon masks on images
-min_max_normalize.py: normalize image intensities to range [-1 1]
+
+normalize_min_max.py: normalize image intensities to range [-1 1]
 
 ## Usage
 ```
