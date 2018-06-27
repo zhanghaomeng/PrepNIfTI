@@ -8,6 +8,10 @@ def read_file(file_path):
 	return file.get_data(), file.affine, file.header
 
 
+
+def flip(image):
+	flipped = np.flip(image, 0)
+	return flipped
 # flag: 'left', 'right' or 'entrie'
 def mask(image, mask, flag):
 
