@@ -11,6 +11,7 @@ def read_file(file_path):
 def flip(image):
 	flipped = np.flip(image, 0)
 	return flipped
+
 # flag: 'left', 'right' or 'entrie'
 def mask(image, mask, flag):
 
@@ -25,7 +26,6 @@ def mask(image, mask, flag):
 		mask_img[mask > 40] = 1.0
 	else:
 		print('Please enter \'entire\', \'left\' or \'right\'')
-
 
 	masked_img = image * mask_img
 
